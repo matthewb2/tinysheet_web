@@ -33,7 +33,7 @@ export default function Home() {
             무료 다운로드 (Windows)
           </a>
           <a
-            href="https://github.com/matthewb2/tinysheet_web"
+            href="https://github.com/matthewb2/tinysheet"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl border border-slate-700 transition-all duration-200"
