@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function DownloadPage() {
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-slate-950 text-slate-100">
+    <div className="min-h-screen flex flex-col justify-between">
       {/* 헤더 */}
       <header className="px-6 py-6 border-b border-slate-900 flex justify-between items-center max-w-5xl mx-auto w-full">
         <Link href="/" className="font-extrabold text-lg text-cyan-400">
@@ -41,15 +41,15 @@ export default function DownloadPage() {
 
         {/* 이전 버전 링크 영역 */}
         <div className="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl text-left">
-          <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">
+          <h3 className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">
             Other Versions
           </h3>
-          <p className="text-sm text-slate-400 mb-4">
+          <p className="text-sm text-indigo-400 mb-4">
             이전 빌드나 다른 버전의 파일이 필요하신가요?
           </p>
           <Link
             href="/download/archive"
-            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium text-sm underline underline-offset-4"
+            className="inline-flex items-center gap-2 text-indigo-400 hover:text-cyan-300 font-medium text-sm underline underline-offset-4"
           >
             이전 버전 목록 보기 (nginx 파일 디렉토리) &rarr;
           </Link>
