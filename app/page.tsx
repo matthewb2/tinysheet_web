@@ -23,15 +23,17 @@ export default function Home() {
 
         {/* 핵심 다운로드 및 GitHub 링크 영역 */}
         <div className="flex flex-col sm:flex-row gap-4 w-full max-w-lg justify-center mb-16">
-          <a
-            href="/tinysheet-setup.exe"
+          {/* 다운로드 페이지로 연결 */}
+          <Link
+            href="/download"
             className="flex items-center justify-center gap-3 px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-xl shadow-lg shadow-cyan-500/20 transition-all duration-200 transform hover:-translate-y-0.5"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             무료 다운로드 (Windows)
-          </a>
+          </Link>
+
           <a
             href="https://github.com/matthewb2/tinysheet"
             target="_blank"
@@ -73,7 +75,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold text-slate-100 mb-3">저사양 최적화</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              시스템 리소스를 거의 소비하지 않아 저사양 PC나 노트북에서도 쾌적하게 구동됩니다.
+              시스템 리소스를 거의 소비하지 상하 저사양 PC나 노트북에서도 쾌적하게 구동됩니다.
             </p>
           </div>
         </div>
@@ -82,7 +84,3 @@ export default function Home() {
       {/* 푸터 */}
       <footer className="py-8 text-center text-sm text-slate-500 border-t border-slate-900">
         &copy; {new Date().getFullYear()} TinySheet. All rights reserved.
-      </footer>
-    </div>
-  );
-}
